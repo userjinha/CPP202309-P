@@ -1,163 +1,159 @@
 #include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 class HealthRecommendation {
-public:
-    void brainHealthAdvice() {
-        cout << "≥˙ ∞«∞≠¿ª ¿ß«— ¡∂æ¿‘¥œ¥Ÿ:" << endl;
-    }
-    void skinHealthAdvice() {
-        cout << "««∫Œ ∞«∞≠¿ª ¿ß«— ∞¸∏Æ" << endl;
-    }
-    void neckHealthAdvice() {
-        cout << "∏Ò ∞«∞≠¿ª ¿ß«— ∞¸∏Æ" << endl;
-    }
-    void stomachHealthAdvice() {
-        cout << "---¿ß ∞«∞≠¿ª ¿ß«— ¡∂æ---" << endl;
-        // ¿ß ∞«∞≠¿ª ¿ß«— ¡∂æ √‚∑¬
-    }
+ public:
+  void brainHealthAdvice() { cout << "Îáå Í±¥Í∞ïÏùÑ ÏúÑÌïú Ï°∞Ïñ∏ÏûÖÎãàÎã§:" << endl; }
+  void skinHealthAdvice() { cout << "ÌîºÎ∂Ä Í±¥Í∞ïÏùÑ ÏúÑÌïú Í¥ÄÎ¶¨" << endl; }
+  void neckHealthAdvice() { cout << "Î™© Í±¥Í∞ïÏùÑ ÏúÑÌïú Í¥ÄÎ¶¨" << endl; }
+  void stomachHealthAdvice() {
+    cout << "---ÏúÑ Í±¥Í∞ïÏùÑ ÏúÑÌïú Ï°∞Ïñ∏---" << endl;
+    // ÏúÑ Í±¥Í∞ïÏùÑ ÏúÑÌïú Ï°∞Ïñ∏ Ï∂úÎ†•
+  }
 
-    void liverHealthAdvice() {
-        cout << "---∞£ ∞«∞≠¿ª ¿ß«— ¡∂æ---" << endl;
-        // ∞£ ∞«∞≠¿ª ¿ß«— ¡∂æ √‚∑¬
-    }
+  void liverHealthAdvice() {
+    cout << "---Í∞Ñ Í±¥Í∞ïÏùÑ ÏúÑÌïú Ï°∞Ïñ∏---" << endl;
+    // Í∞Ñ Í±¥Í∞ïÏùÑ ÏúÑÌïú Ï°∞Ïñ∏ Ï∂úÎ†•
+  }
 
-    void intestineHealthAdvice() {
-        cout << "---¿Â ∞«∞≠¿ª ¿ß«— ¡∂æ---" << endl;
-        // ¿Â ∞«∞≠¿ª ¿ß«— ¡∂æ √‚∑¬
-    }
-    void femaleHealthAdvice() {
-        cout << "ª˝Ωƒ±‚ ∞«∞≠¿ª ¿ß«— ∞¸∏Æ" << endl;
-    }
-    void maleHealtheAdvice() {
-        cout << " ∫Ò¥¢±‚ ∞«∞≠¿ª ¿ß«— ∞¸∏Æ" << endl;
-    }
-    void boneHealthAdivice() {
-        cout << "ª¿ ∞«∞≠¿ª ¿ß«— ∞¸∏Æ" << endl;
-    }
+  void intestineHealthAdvice() {
+    cout << "---Ïû• Í±¥Í∞ïÏùÑ ÏúÑÌïú Ï°∞Ïñ∏---" << endl;
+    // Ïû• Í±¥Í∞ïÏùÑ ÏúÑÌïú Ï°∞Ïñ∏ Ï∂úÎ†•
+  }
+  void femaleHealthAdvice() { cout << "ÏÉùÏãùÍ∏∞ Í±¥Í∞ïÏùÑ ÏúÑÌïú Í¥ÄÎ¶¨" << endl; }
+  void maleHealtheAdvice() { cout << " ÎπÑÎá®Í∏∞ Í±¥Í∞ïÏùÑ ÏúÑÌïú Í¥ÄÎ¶¨" << endl; }
+  void boneHealthAdivice() { cout << "Îºà Í±¥Í∞ïÏùÑ ÏúÑÌïú Í¥ÄÎ¶¨" << endl; }
 };
-
 
 class LifestyleSurvey {
-public:
-    void takeSurvey() {
-        int exerciseFreq, sleepHours, breakfastFreq;
+ public:
+  void takeSurvey() {
+    int exerciseFreq, sleepHours, breakfastFreq;
 
-        cout << "----ª˝»∞Ω¿∞¸ º≥πÆ¡∂ªÁ----" << endl;
-        cout << "1. ∆Úº“ øÓµø¿ª ¿⁄¡÷ «œΩ√≥™ø‰? (1: øπ, 2: ∞≈¿« æ»«‘): ";
-        cin >> exerciseFreq;
+    cout << "----ÏÉùÌôúÏäµÍ¥Ä ÏÑ§Î¨∏Ï°∞ÏÇ¨----" << endl;
+    cout << "1. ÌèâÏÜå Ïö¥ÎèôÏùÑ ÏûêÏ£º ÌïòÏãúÎÇòÏöî? (1: Ïòà, 2: Í±∞Ïùò ÏïàÌï®): ";
+    cin >> exerciseFreq;
 
-        if (exerciseFreq == 1 || exerciseFreq == 2) {
-            cout << "º∫¿Œ¿ª ±‚¡ÿ¿∏∑Œ ¿œ¡÷¿œø° √÷º“ 5π¯, «œ∑Áø° 30∫– ¿ÃªÛ¿« ¿˙∞≠µµ ∂«¥¬ ¡ﬂ∞≠µµ øÓµø¿ª ±«¿Â«’¥œ¥Ÿ." << endl;
-            cout << "¿œ¡÷¿œø° √÷º“ 3¿œ, «œ∑Áø° 20∫– ¿ÃªÛ¿« ∞Ì∞≠µµ øÓµø¿ª ±«¿Â«’¥œ¥Ÿ." << endl;
-        }
-
-        int exerciseType;
-        if (exerciseFreq == 1) {
-            cout << "1. ±◊≥… øÓµø   2. ±Ÿ¿∞ ≈∞øÏ±‚: ";
-            cin >> exerciseType;
-
-            if (exerciseType == 1) {
-                cout << "¿ØªÍº“ øÓµø¿ª √ﬂ√µ«’¥œ¥Ÿ." << endl;
-                cout << "∞»±‚, ¡∂±Î, ºˆøµ, ¿⁄¿¸∞≈≈∏±‚ µÓ¿« øÓµø¿ª ±«¿Â«’¥œ¥Ÿ." << endl;
-            }
-            else if (exerciseType == 2) {
-                cout << "±Ÿ∑¬ øÓµø¿ª √ﬂ√µ«’¥œ¥Ÿ." << endl;
-                cout << "Ω∫ƒı∆Æ, µ•µÂ∏Æ«¡∆Æ, ∫•ƒ° «¡∑πΩ∫, √º¿Œ¡ˆ «™Ω√æ˜ µÓ¿« øÓµø¿ª ±«¿Â«’¥œ¥Ÿ." << endl;
-            }
-        }
-
-        cout << "2. ∆Úº“ ¿·¿ª ∏ÓΩ√∞£ ¡§µµ ¿⁄≥™ø‰? (1: 5Ω√∞£ πÃ∏∏, 2: 6Ω√∞£~9Ω√∞£, 3: 10Ω√∞£ ¿ÃªÛ): ";
-        cin >> sleepHours;
-
-        if (sleepHours == 1) {
-            cout << "º∫¿Œ¿ª ±‚¡ÿ¿∏∑Œ √÷º“ 6Ω√∞£¿« ºˆ∏È¿Ã ¡¡Ω¿¥œ¥Ÿ." << endl;
-            cout << "ºˆ∏È¿Ã ø¿¡ˆ æ ¥¬¥Ÿ∏È µ˚∂Ê«— ª˛øˆ, ∏ÌªÛ, µ∂º≠, ¥¿±ﬂ«— ªÍ√•, ¬˜ ∏∂Ω√±‚ µÓ¿ª √ﬂ√µ«’¥œ¥Ÿ." << endl;
-        }
-        else if (sleepHours == 3) {
-            cout << "«œ∑Áø° 10Ω√∞£ ¿ÃªÛ ¿⁄¥¬ ∞Õ¿Ã ¡¡¡ˆ æ Ω¿¥œ¥Ÿ." << endl;
-            cout << "¿·¿ª ∏π¿Ã ¿ﬂ ∞ÊøÏ Ω∫∆Æ∑πΩ∫, ≥˙¡π¡ﬂ, æ‡π∞ ∫Œ¿€øÎ µÓ¿« ø¯¿Œ¿Ã µ… ºˆ ¿÷Ω¿¥œ¥Ÿ." << endl;
-        }
-
-        cout << "3. æ∆ƒßΩƒªÁ∏¶ ¿⁄¡÷ «œΩ√≥™ø‰? (1: ∏≈¿œ, 2: ∞≈¿« æ» ∏‘¿Ω): ";
-        cin >> breakfastFreq;
-
-        if (breakfastFreq == 1) {
-            cout << "æ∆ƒßΩƒªÁ¥¬ ¡˝¡ﬂ∑¬/±‚æÔ∑¬ ¡ı¡¯, ø°≥ ¡ˆ ∞¯±ﬁ, √º¡ﬂ ∞®∑Æ, ∏Èø™∑¬ ¡ı¡¯, «˜¥Á ∞®º“ µÓø° µµøÚ¿Ã µÀ¥œ¥Ÿ." << endl;
-            cout << "≈Îπ– ≈‰Ω∫∆Æ, ¥‹πÈ¡˙ Ω¶¿Ã≈©, ±◊∏Ø ø‰∞≈∆Æ, ø¿∆Æπ– µÓ¿ª ∞£¥‹«— æ∆ƒßΩƒªÁ∑Œ √ﬂ√µ«’¥œ¥Ÿ." << endl;
-        }
+    if (exerciseFreq == 1 || exerciseFreq == 2) {
+      cout << "ÏÑ±Ïù∏ÏùÑ Í∏∞Ï§ÄÏúºÎ°ú ÏùºÏ£ºÏùºÏóê ÏµúÏÜå 5Î≤à, ÌïòÎ£®Ïóê 30Î∂Ñ Ïù¥ÏÉÅÏùò Ï†ÄÍ∞ïÎèÑ "
+              "ÎòêÎäî Ï§ëÍ∞ïÎèÑ Ïö¥ÎèôÏùÑ Í∂åÏû•Ìï©ÎãàÎã§."
+           << endl;
+      cout << "ÏùºÏ£ºÏùºÏóê ÏµúÏÜå 3Ïùº, ÌïòÎ£®Ïóê 20Î∂Ñ Ïù¥ÏÉÅÏùò Í≥†Í∞ïÎèÑ Ïö¥ÎèôÏùÑ Í∂åÏû•Ìï©ÎãàÎã§."
+           << endl;
     }
+
+    int exerciseType;
+    if (exerciseFreq == 2) {
+      cout << "1. Í∑∏ÎÉ• Ïö¥Îèô   2. Í∑ºÏú° ÌÇ§Ïö∞Í∏∞: ";
+      cin >> exerciseType;
+
+      if (exerciseType == 1) {
+        cout << "Ïú†ÏÇ∞ÏÜå Ïö¥ÎèôÏùÑ Ï∂îÏ≤úÌï©ÎãàÎã§." << endl;
+        cout << "Í±∑Í∏∞, Ï°∞ÍπÖ, ÏàòÏòÅ, ÏûêÏ†ÑÍ±∞ÌÉÄÍ∏∞ Îì±Ïùò Ïö¥ÎèôÏùÑ Í∂åÏû•Ìï©ÎãàÎã§." << endl;
+      } else if (exerciseType == 2) {
+        cout << "Í∑ºÎ†• Ïö¥ÎèôÏùÑ Ï∂îÏ≤úÌï©ÎãàÎã§." << endl;
+        cout << "Ïä§ÏøºÌä∏, Îç∞ÎìúÎ¶¨ÌîÑÌä∏, Î≤§Ïπò ÌîÑÎ†àÏä§, Ï≤¥Ïù∏ÏßÄ Ìë∏ÏãúÏóÖ Îì±Ïùò Ïö¥ÎèôÏùÑ "
+                "Í∂åÏû•Ìï©ÎãàÎã§."
+             << endl;
+      }
+    }
+
+    cout << "2. ÌèâÏÜå Ïû†ÏùÑ Î™áÏãúÍ∞Ñ Ï†ïÎèÑ ÏûêÎÇòÏöî? (1: 5ÏãúÍ∞Ñ ÎØ∏Îßå, 2: 6ÏãúÍ∞Ñ~9ÏãúÍ∞Ñ, "
+            "3: 10ÏãúÍ∞Ñ Ïù¥ÏÉÅ): ";
+    cin >> sleepHours;
+
+    if (sleepHours == 1) {
+      cout << "ÏÑ±Ïù∏ÏùÑ Í∏∞Ï§ÄÏúºÎ°ú ÏµúÏÜå 6ÏãúÍ∞ÑÏùò ÏàòÎ©¥Ïù¥ Ï¢ãÏäµÎãàÎã§." << endl;
+      cout << "ÏàòÎ©¥Ïù¥ Ïò§ÏßÄ ÏïäÎäîÎã§Î©¥ Îî∞ÎúªÌïú ÏÉ§Ïõå, Î™ÖÏÉÅ, ÎèÖÏÑú, ÎäêÍ∏ãÌïú ÏÇ∞Ï±Ö, Ï∞® "
+              "ÎßàÏãúÍ∏∞ Îì±ÏùÑ Ï∂îÏ≤úÌï©ÎãàÎã§."
+           << endl;
+    } else if (sleepHours == 3) {
+      cout << "ÌïòÎ£®Ïóê 10ÏãúÍ∞Ñ Ïù¥ÏÉÅ ÏûêÎäî Í≤ÉÏù¥ Ï¢ãÏßÄ ÏïäÏäµÎãàÎã§." << endl;
+      cout << "Ïû†ÏùÑ ÎßéÏù¥ Ïûò Í≤ΩÏö∞ Ïä§Ìä∏Î†àÏä§, ÎáåÏ°∏Ï§ë, ÏïΩÎ¨º Î∂ÄÏûëÏö© Îì±Ïùò ÏõêÏù∏Ïù¥ Îê† "
+              "Ïàò ÏûàÏäµÎãàÎã§."
+           << endl;
+    }
+
+    cout << "3. ÏïÑÏπ®ÏãùÏÇ¨Î•º ÏûêÏ£º ÌïòÏãúÎÇòÏöî? (1: Îß§Ïùº, 2: Í±∞Ïùò Ïïà Î®πÏùå): ";
+    cin >> breakfastFreq;
+
+    if (breakfastFreq == 2) {
+      cout << "ÏïÑÏπ®ÏãùÏÇ¨Îäî ÏßëÏ§ëÎ†•/Í∏∞ÏñµÎ†• Ï¶ùÏßÑ, ÏóêÎÑàÏßÄ Í≥µÍ∏â, Ï≤¥Ï§ë Í∞êÎüâ, Î©¥Ïó≠Î†• "
+              "Ï¶ùÏßÑ, ÌòàÎãπ Í∞êÏÜå Îì±Ïóê ÎèÑÏõÄÏù¥ Îê©ÎãàÎã§."
+           << endl;
+      cout << "ÌÜµÎ∞Ä ÌÜ†Ïä§Ìä∏, Îã®Î∞±Ïßà ÏâêÏù¥ÌÅ¨, Í∑∏Î¶≠ ÏöîÍ±∞Ìä∏, Ïò§Ìä∏Î∞Ä Îì±ÏùÑ Í∞ÑÎã®Ìïú "
+              "ÏïÑÏπ®ÏãùÏÇ¨Î°ú Ï∂îÏ≤úÌï©ÎãàÎã§."
+           << endl;
+    }
+  }
 };
 
-
 class HealthSurvey {
-public:
-    void takeSurvey() {
-        int diseaseChoice;
-        cout << "1. «ˆ¿Á ∫¥¿ª æŒ∞Ì ¿÷≥™ø‰? (1: øπ, 2: æ∆¥œø‰) ";
-        cin >> diseaseChoice;
+ public:
+  void takeSurvey() {
+    int diseaseChoice;
+    cout << "----Í≥†Í∞ù ÎßûÏ∂§Ìòï Ìó¨Ïä§ÏºÄÏñ¥----"<<endl;
+    cout << endl;
+    cout << "1. ÌòÑÏû¨ Î≥ëÏùÑ ÏïìÍ≥† ÏûàÎÇòÏöî? (1: Ïòà, 2: ÏïÑÎãàÏöî) ";
+    cin >> diseaseChoice;
 
-        HealthRecommendation recommendation;
-        if (diseaseChoice == 1) {
-            int specificDiseaseChoice;
-            cout << "1-1. ±∏√º¿˚¿∏∑Œ æÓ∂≤ ∫Œ¿ß∞° ¿ÃªÛ¿Ã ¿÷¿∏Ω≈∞°ø‰?" << endl;
-            vector<string>bodyParts = { "≥˙", "««∫Œ","∏Ò", "∫π∫Œ(1.¿ß, 2.∞£, 3.¿Â)","ª˝Ωƒ±‚","∫Ò¥¢±‚","ª¿" };
+    HealthRecommendation recommendation;
+    if (diseaseChoice == 1) {
+      int specificDiseaseChoice;
+      cout << "1-1. Íµ¨Ï≤¥Ï†ÅÏúºÎ°ú Ïñ¥Îñ§ Î∂ÄÏúÑÍ∞Ä Ïù¥ÏÉÅÏù¥ ÏûàÏúºÏã†Í∞ÄÏöî?" << endl;
+      vector<string> bodyParts = {
+          "Îáå",     "ÌîºÎ∂Ä",   "Î™©", "Î≥µÎ∂Ä(1.ÏúÑ, 2.Í∞Ñ, 3.Ïû•)",
+          "ÏÉùÏãùÍ∏∞", "ÎπÑÎá®Í∏∞", "Îºà"};
 
-            for (int i = 0; i < bodyParts.size(); ++i) {
-                cout << i + 1 << ") " << bodyParts[i] << " ";
-            }
-            cin >> specificDiseaseChoice;
+      for (int i = 0; i < bodyParts.size(); ++i) {
+        cout << i + 1 << ") " << bodyParts[i] << " ";
+      }
+      cin >> specificDiseaseChoice;
 
-            switch (specificDiseaseChoice) {
+      switch (specificDiseaseChoice) {
+        case 1:
+          recommendation.brainHealthAdvice();
+          break;
+        case 2:
+          recommendation.skinHealthAdvice();
+          break;
+        case 3:
+          recommendation.neckHealthAdvice();
+          break;
 
+        case 4:
+          int abdomenChoice;
+          cout << " 1. ÏúÑ   2. Í∞Ñ   3. Ïû• ";
+          cin >> abdomenChoice;
+          switch (abdomenChoice) {
             case 1:
-                recommendation.brainHealthAdvice();
-                break;
+              recommendation.stomachHealthAdvice();
+              break;
             case 2:
-                recommendation.skinHealthAdvice();
-                break;
+              recommendation.liverHealthAdvice();
+              break;
             case 3:
-                recommendation.neckHealthAdvice();
-                break;
-
-            case 4:
-                int abdomenChoice;
-                cout << " 1. ¿ß   2. ∞£   3. ¿Â ";
-                cin >> abdomenChoice;
-                switch (abdomenChoice) {
-                case 1:
-                    recommendation.stomachHealthAdvice();
-                    break;
-                case 2:
-                    recommendation.liverHealthAdvice();
-                    break;
-                case 3:
-                    recommendation.intestineHealthAdvice();
-                    break;
-                default:
-                    cout << "¿Ø»ø«œ¡ˆ æ ¿∫ º±≈√¿‘¥œ¥Ÿ." << endl;
-                    break;
-                }
-
-            case 5:
-                recommendation.femaleHealthAdvice();
-                break;
-            case 6:
-                recommendation.maleHealtheAdvice();
-                break;
-            case 7:
-                recommendation.boneHealthAdivice();
-                break;
-
+              recommendation.intestineHealthAdvice();
+              break;
             default:
-                cout << "¿Ø»ø«œ¡ˆ æ ¿∫ º±≈√¿‘¥œ¥Ÿ." << endl;
-            }
-        }
+              cout << "Ïú†Ìö®ÌïòÏßÄ ÏïäÏùÄ ÏÑ†ÌÉùÏûÖÎãàÎã§." << endl;
+              break;
+          }
 
+        case 5:
+          recommendation.femaleHealthAdvice();
+          break;
+        case 6:
+          recommendation.maleHealtheAdvice();
+          break;
+        case 7:
+          recommendation.boneHealthAdivice();
+          break;
 
+<<<<<<< HEAD
         else if (diseaseChoice == 2) {
 
             cout << "ª˝»∞Ω¿∞¸ º≥πÆ¡∂ªÁ∑Œ ¿Ãµø«’¥œ¥Ÿ." << endl;
@@ -167,14 +163,33 @@ public:
         else {
             cout << "¿Ø»ø«œ¡ˆ æ ¿∫ º±≈√¿‘¥œ¥Ÿ.";
         }
+=======
+        default:
+          cout << "Ïú†Ìö®ÌïòÏßÄ ÏïäÏùÄ ÏÑ†ÌÉùÏûÖÎãàÎã§." << endl;
+      }
+>>>>>>> 7c429701ebfabf83cff427a23d6c64902ed8692c
     }
-    
-    
+
+    else if (diseaseChoice == 2) {
+      cout << endl;
+      cout << "ÏÉùÌôúÏäµÍ¥Ä ÏÑ§Î¨∏Ï°∞ÏÇ¨Î°ú Ïù¥ÎèôÌï©ÎãàÎã§." << endl;
+      LifestyleSurvey lifestyleSurvey;
+      lifestyleSurvey.takeSurvey();
+    } else {
+      cout << "Ïú†Ìö®ÌïòÏßÄ ÏïäÏùÄ ÏÑ†ÌÉùÏûÖÎãàÎã§.";
+    }
+  }
 };
 
+<<<<<<< HEAD
  int main() {
     HealthSurvey takeSurvey();
     survey.takeSurvey(); // healthSurvey¿« º≥πÆ¡∂ªÁ Ω√«‡
+=======
+int main() {
+  HealthSurvey survey; 
+  survey.takeSurvey();  // healthSurveyÏùò ÏÑ§Î¨∏Ï°∞ÏÇ¨ ÏãúÌñâ
+>>>>>>> 7c429701ebfabf83cff427a23d6c64902ed8692c
 
-        return 0;
-    }
+  return 0;
+}
