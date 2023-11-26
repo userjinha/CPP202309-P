@@ -161,7 +161,8 @@ public:
         else if (diseaseChoice == 2) {
 
             cout << "생활습관 설문조사로 이동합니다." << endl;
-            LifestyleSurvey takeSurvey();
+            LifestyleSurvey lifestyleSurvey;
+            lifestyleSurvey.takeSurvey();
         }
         else {
             cout << "유효하지 않은 선택입니다.";
@@ -172,9 +173,8 @@ public:
 };
 
  int main() {
-        LifestyleSurvey takeSurvey();
-        HealthSurvey survey;
-        survey.takeSurvey();
+    HealthSurvey takeSurvey();
+    survey.takeSurvey(); // healthSurvey의 설문조사 시행
 
         return 0;
     }
