@@ -156,12 +156,12 @@ class HealthSurvey {
 <<<<<<< HEAD
         else if (diseaseChoice == 2) {
 
-            cout << "»ýÈ°½À°ü ¼³¹®Á¶»ç·Î ÀÌµ¿ÇÕ´Ï´Ù." << endl;
+            cout << "ï¿½ï¿½È°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Õ´Ï´ï¿½." << endl;
             LifestyleSurvey lifestyleSurvey;
             lifestyleSurvey.takeSurvey();
         }
         else {
-            cout << "À¯È¿ÇÏÁö ¾ÊÀº ¼±ÅÃÀÔ´Ï´Ù.";
+            cout << "ï¿½ï¿½È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.";
         }
 =======
         default:
@@ -184,7 +184,7 @@ class HealthSurvey {
 <<<<<<< HEAD
  int main() {
     HealthSurvey takeSurvey();
-    survey.takeSurvey(); // healthSurveyÀÇ ¼³¹®Á¶»ç ½ÃÇà
+    survey.takeSurvey(); // healthSurveyï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 =======
 int main() {
   HealthSurvey survey; 
