@@ -153,21 +153,11 @@ class HealthSurvey {
           recommendation.boneHealthAdivice();
           break;
 
-<<<<<<< HEAD
-        else if (diseaseChoice == 2) {
 
-            cout << "��Ȱ���� ��������� �̵��մϴ�." << endl;
-            LifestyleSurvey lifestyleSurvey;
-            lifestyleSurvey.takeSurvey();
-        }
-        else {
-            cout << "��ȿ���� ���� �����Դϴ�.";
-        }
-=======
         default:
           cout << "유효하지 않은 선택입니다." << endl;
       }
->>>>>>> 7c429701ebfabf83cff427a23d6c64902ed8692c
+
     }
 
     else if (diseaseChoice == 2) {
@@ -181,15 +171,11 @@ class HealthSurvey {
   }
 };
 
-<<<<<<< HEAD
- int main() {
-    HealthSurvey takeSurvey();
-    survey.takeSurvey(); // healthSurvey�� �������� ����
-=======
+
 int main() {
   HealthSurvey survey; 
   survey.takeSurvey();  // healthSurvey의 설문조사 시행
->>>>>>> 7c429701ebfabf83cff427a23d6c64902ed8692c
+
 
   return 0;
 }
