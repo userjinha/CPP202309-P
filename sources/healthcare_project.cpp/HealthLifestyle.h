@@ -4,31 +4,54 @@
 #define HEALTH_LIFESTYLE_H
 
 #include <iostream>
+#include <string>
+#include <unordered_map>
 #include <vector>
-
+#include <limits>
 using namespace std;
 
 class HealthRecommendation {
  public:
-  void brainHealthAdvice();
-  void skinHealthAdvice();
-  void neckHealthAdvice();
-  void stomachHealthAdvice();
-  void liverHealthAdvice();
-  void intestineHealthAdvice();
-  void femaleHealthAdvice();
-  void maleHealthAdvice();  
-  void boneHealthAdvice();  
+  void healthAdvice(const string& part);
+   void displayAdvice(const std::string& part) const;
+
+  std::unordered_map<std::string, std::pair<std::string, std::string>>
+      adviceMap{
+          {"뇌", {"규칙적인 운동: 혈액 순환 촉진 및 뇌에 산소 공급, 신경세포의 성장과 연결 형성에 도움\n정신활동\n스트레스 관리\n충분한 수면 ", "비트, 계피, 은행, 생선 또는 오메가3, 견과류, 로즈마리, 다크 초콜릿"}},
+          {"피부",
+           {"균형잡힌 식단 유지하기\n충분한 수분 섭취\n미세먼지로부터 피부 보호하기",
+            "석류, 브로콜리, 레몬, 해조류, 꿀"}},
+          {"목", {"습도 조절: 일반적으로 습도 40~60%가 적당하다. 가습기나 제습기를 사용하여 습도를 조절할 수 있다.\n바른자세 유지\n스트레칭:어깨를 펴고 턱을 목 쪽으로 당겨준다. 또 바로 선 자세에서 목을 수평인 채로 옆으로 돌리는 것도 좋다.\n목 마사지: 손가락으로 뒷목과 어깨 부위를 부드럽게 누르거나 문질러주면 된다.\n적절한 베개 사용\n목에 부담을 주는 음식 피하기(딱딱,뾰족,매운,얼음음료X)", 
+          "마늘, 생강과 레몬, 카모바일"}},
+           {"위",
+            {"정기적인 식사: 무리한 다이어트나 과식은 위에 무리를 줄 수 "
+             "이으므로, 규칙적이고 고른 식사가 필요, 아침 식사를 거르거나 식사 "
+             "시간을 일정하지 않게 하는 것도 위 건강에 좋지 않다\n음식을 씹는 "
+             "횟수 늘리기\n빈속에 우유 마시지 말기\n밥먹고 바로 마시는 커피 "
+             "한잔 해로움\n아침식사 전 빈속에 먹는 사과",
+             "양배추, 마, 브로콜리, 케일, 토마토"}},
+          {"간", {"음료와 약물 섭취 주의: 약물은 간을 통해 대부분 처리되기 때문에 특히 비타민이나 보조제를 과다하게 섭취하거나, 필요이상으로 항생제를 무분별하게 복용하는 것은 간에 부담을 준다.\n방부제나 화학 첨가물이 적은 식품 선택\n고단백질, 낮은 지방 섭취", "마늘, 사과, 자몽"}},
+          {"장", {"일어나자마자 물 한잔 마시기: 위와 장이 부드러운 자극을 받아 장이 더 활기차게 움직이고 장속 노폐물이 빠져나갈 확률이 높아진다.\n유산소 운동: 근육을 강화하는 운동보다는 장에 좋은 습관은 산책, 조깅과 같은 유산소 운동을 하는 것이 도움이 된다.", "콤푸차, 김치, 콩 발효식품, 그린 올리브"}},
+          {"생식기", {"몸을 따뜻하게 하기: 특히 목과 배 부분을 항상 따뜻하게 한다.\n혈액순환을 원활하게 해주기: 꽉끼는 옷을 입지 말고 수분을 자주 섭취하며 또한 과체중이라면 다이어트를 해주는 것이 좋다", "석류\n강황: 커큐민이 체온을 높이고 혈액순환을 도와 생리통과 생리불순에 좋다\n하지만 임산부의 경우 섭취 자제"}},
+          {"비뇨기", {"꾸준한 운동: 전립선 건강을 촉진하고 혈액 순환을 개선하여 전반적인 건강에 도움을 준다.\n금연과 음주 제한", "고기와 어류:오메가-3 지방산이 풍부한 어류\n(토마토, 브로콜리, 당근, 호박):리코펜이 함유되어 건강에 도움"}},
+          {"뼈", {"꾸준한 운동: 중력을 받는 호라동들이 뼈 건강에 미치는 영향이 크기에 걷기, 뛰기, 줄넘기, 스쿼트 등을 포함한 꾸준한 운동을 한다(과격한 운동 피하기)\n관절에 무리가 가는 자세 피하기:쪼그려 앉기, 한쪽 다리에 체중을 싣는 자세, 무릎을 꿇는 자세 등 관절에 무리가 가는 자세는 피하는 것이 좋다.\n충분한 휴식 취하기", "우유 치즈 멸치 견과류: 칼슘이 풍부한 음식\n생선 달걀 노른자: 비타민 D가 풍부한 음식\n녹색 잎채소 브로콜리 양배추: 비타민 K가 풍부한 음식"}}
+      };
 };
 
 class LifestyleSurvey {
  public:
   void takeSurvey();
+
+ private:
+  int exerciseType;
 };
 
 class HealthSurvey {
  public:
   void takeSurvey();
+
+ private:
+  HealthRecommendation recommendation;
 };
 
 #endif /* HEALTH_LIFESTYLE_H */
