@@ -10,11 +10,13 @@
 #include <limits>
 using namespace std;
 
+// 건강 조언을 담고 있는 클래스
 class HealthRecommendation {
  public:
-  void healthAdvice(const string& part);
-   void displayAdvice(const std::string& part) const;
+ void healthAdvice(const string& part);
+ void displayAdvice(const std::string& part) const;
 
+ // 부위에 따른 건강 조언을 담고 있는 unordered_map
   std::unordered_map<std::string, std::pair<std::string, std::string>>
       adviceMap{
           {"뇌", {"규칙적인 운동: 혈액 순환 촉진 및 뇌에 산소 공급, 신경세포의 성장과 연결 형성에 도움\n정신활동\n스트레스 관리\n충분한 수면 ", "비트, 계피, 은행, 생선 또는 오메가3, 견과류, 로즈마리, 다크 초콜릿"}},
@@ -38,20 +40,22 @@ class HealthRecommendation {
       };
 };
 
+// 생활 습관 설문을 위한 클래스
 class LifestyleSurvey {
  public:
-  void takeSurvey();
+  void takeSurvey(); // 생활 습고나에 관한 설문조사 함수
 
  private:
-  int exerciseType;
+  int exerciseType; // 운동 타입을 저장하기 위한 변수
 };
 
+// 건강 조사를 위한 클래스
 class HealthSurvey {
  public:
-  void takeSurvey();
+  void takeSurvey(); // 건강 조사 함수
 
  private:
-  HealthRecommendation recommendation;
+  HealthRecommendation recommendation; // 건강 조언 객체를 포함한 변수
 };
 
 #endif /* HEALTH_LIFESTYLE_H */

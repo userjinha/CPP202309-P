@@ -1,23 +1,28 @@
 #include "HealthLifestyle.h"
 
-// 병이 있을시 부위에 따른 건강 조언 및 음식 추천 출력 함수
+// 부위에 따른 건강 조언을 보여주며 호출하는 함수
 void HealthRecommendation::healthAdvice(const string& part) {
-  displayAdvice(part);
+  displayAdvice(part); // dispalyAdvice함수를 호출하여 부위에 따른 건강 조언 출력
 }
 
-// 부위에 따른 생활 습관 및 음식 추천해주는 출력 함수
+
+// 이상 부위에 따른 생활 습관 및 음식을 추천해주는 함수
 void HealthRecommendation::displayAdvice(const std::string& part) const {
+   // 부위에 해당하는 건강 정보 출력
   std::cout << "--" << part << " 건강--" << std::endl;
-  std::cout << "1. 생활 습관\n2. 추천 음식\n3. 종료하기\n";
+  std::cout << "1. 생활 습관\n2. 추천 음식\n3. 종료하기\n"; // 선택지 제공
   int choice;
   std::cin >> choice;
 
+  // part에 대한 건강 정보가 adviceMap에 있는지 확인
   if (adviceMap.find(part) != adviceMap.end()) {
     switch (choice) {
       case 1:
+          // 해당 부위에 대한 추천 생활습관 출력
         std::cout << "--추천 생활 습관--\n" << adviceMap.at(part).first << std::endl;
         break;
       case 2:
+          // 해당 부위에 대한 추천 음식 정보 출력
         std::cout << "--추천 음식--\n" << adviceMap.at(part).second << std::endl;
         break;
       case 3:
@@ -55,6 +60,7 @@ void HealthRecommendation::displayAdvice(const std::string& part) const {
 void LifestyleSurvey::takeSurvey() {
   int exerciseFreq, sleepHours, breakfastFreq;
 
+  // 간단한 생활습관 설문조사
   cout << "----생활습관 설문조사----" << endl;
 
   cout << "1. 평소 운동을 자주 하시나요? (1: 예, 2: 거의 안함): ";
@@ -67,7 +73,7 @@ void LifestyleSurvey::takeSurvey() {
   cout << "3. 아침식사를 자주 하시나요? (1: 매일, 2: 거의 안 먹음): ";
   cin >> breakfastFreq;
 
-  // 조언 출력 부분
+  // 설문조사 결과를 바탕으로 한 조언 출력 부분
   cout << " ==조언==" << endl;
   if (exerciseFreq == 2) {
     if (exerciseType == 1) {
@@ -105,7 +111,7 @@ void LifestyleSurvey::takeSurvey() {
 
 
 
-// 병을 앓고 있으면 부위에 따른 조언하기 위한 함수
+// 초기 설문조사
 void HealthSurvey::takeSurvey() {
   int diseaseChoice;
 
@@ -130,6 +136,7 @@ void HealthSurvey::takeSurvey() {
       }
       cin >> specificDiseaseChoice;
 
+      // 사용자가 선택한 부위에 따른  출력
       if (specificDiseaseChoice >= 1 &&
           specificDiseaseChoice <= bodyParts.size()) {
         if (specificDiseaseChoice !=
@@ -160,9 +167,9 @@ void HealthSurvey::takeSurvey() {
               break;
             } else {
               cout << "유효하지 않은 선택입니다. 다시 선택해주세요." << endl;
-              std::cin.clear();  // clear the error flag
+              std::cin.clear();  // 에러 플래그 초기화
               std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
-                              '\n');  // discard the input buffer
+                              '\n');  
             }
           } while (true);
         }
@@ -171,6 +178,7 @@ void HealthSurvey::takeSurvey() {
       }
     } 
     else if (diseaseChoice == 2) {
+        // 병이 없는 경우
       std::cout << std::endl;
       std::cout << "생활습관 설문조사로 이동합니다." << std::endl;
       LifestyleSurvey lifestyleSurvey;
